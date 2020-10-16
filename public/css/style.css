@@ -1,0 +1,270 @@
+
+html {
+}
+
+body {
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#brand {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+  #brand .logo {
+    margin: 0px auto;
+    width: 244px;
+    text-align: center;
+  }
+    #brand .logo * {
+      font-weight: normal;
+      color: #777;
+      margin: 0;
+      padding: 0;
+    }
+    #brand *:hover {
+        text-decoration: none;
+    }
+    #brand .logo h1 {
+      font-size: 50px;
+    }
+    #brand .logo h2 {
+      font-size: 30px;
+      border-top: 4px solid #777;
+    }
+
+#navbarToggler ul li a {
+  padding: 4px 70px;
+  margin: 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav.sticky-top {
+  border-bottom: 1px solid #5A6991;
+}
+
+.content-header {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 88px 0 80px 0;
+  background-color: #5A6991;
+  background-image: url('/img/hero-flash-memory.jpg');
+  background-position: center 0;
+  background-size: cover;
+}
+  .content-header h1 {
+    font-weight: 400;
+    font-size: 3rem;
+  }
+
+.footer-contact {
+  background-color: #5A6991;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 50px 0;
+}
+  .footer-contact .row h3 {
+    line-height: 2.4rem;
+  }
+.footer {
+  background-color: #55595b;
+  color: #FFFFFF;
+  padding: 75px 0 45px 0;
+  clear: both;
+  font: 300 14px/22px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+}
+  .footer a, .footer a:hover {
+    color: #FFFFFF;
+  }
+  .footer h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .footer h4, .footer h4 a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .footer * {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .footer p, .footer ul {
+    padding: 0;
+    padding-left: 0.5rem;
+  }
+  .footer .left-column {
+    margin-bottom: 2rem;
+  }
+  .footer ul {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  .footer ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+.copyright {
+  background-color: #333;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 10px 0;
+  font-weight: 300;
+}
+  .copyright a {
+    color: #ccc;
+  }
+
+.social-links a {
+  color: #999;
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.social-links a:hover {
+  color: #5A6991;
+}
+
+/** homepage **/
+
+.our-services {
+  padding: 30px 0;
+  color: #5A6991;
+}
+
+  .our-services a, .our-services a:hover {
+    text-decoration: none;
+    color: #5A6991;
+  }
+
+  .our-services h4 {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  .our-services .icon {
+    font-size: 4rem;
+  }
+
+/** /about/ **/
+
+.about {
+  padding: 20px;
+}
+
+/** /about/careers/ **/
+
+.careers {
+  padding: 20px;
+  max-width: 940px;
+}
+
+/** /about/clients/ **/
+
+.clients {
+  margin-top: 10px;
+}
+  .clients hr {
+    background: #5A6991;
+    width: 80%;
+  }
+  .clients .client {
+    margin: 20px;
+    padding: 20px;
+  }
+    .clients .client .services {
+      border-radius: 1rem;
+      background: #F4F4F4;
+      padding: 10px;
+    }
+
+.client-logo {
+}
+  .client-logo img {
+    width: 100%;
+    padding: 10px;
+  }
+  .client-logo .tags {
+    margin: 10px 0;
+  }
+
+/** /contact/ **/
+
+.contact-form {
+  background: #EEE;
+}
+
+.contact-form, .contact-sidebar {
+  padding: 10px;
+}
+
+/** /projects/ **/
+
+.projects {
+  padding: 20px;
+}
+
+  .projects .row {
+    margin-bottom: 20px;
+  }
+
+.project {
+}
+
+  .project .logo {
+    margin: 10px 0;
+    width: 400px;
+  }
+
+    .project .logo img {
+      width: 400px;
+    }
+
+/** back to top **/
+
+#back-to-top-button {
+  display: inline-block;
+  background-color: #CCC;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#back-to-top-button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#back-to-top-button:active {
+  background-color: #555;
+}
+#back-to-top-button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#back-to-top-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/** reCAPTCHA **/
+
+.grecaptcha-badge {
+  display:none;
+}
